@@ -15,7 +15,9 @@ ds <- function(x) {
 
   #Numeric summary
   data.frame(min = min(x),
-             max = max(x),
              median = median(x),
-             mean = mean(x))
+             mean = mean(x),
+             max = max(x),
+             sd = sd(x),
+             range = max(x) - min(x))
 }
